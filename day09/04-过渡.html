@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 鼠标悬停时宽度由200变成600，花费2秒 背景颜色由粉变蓝,时间2秒*/
+            /* 如果变化的属性多，直接写all表示所有 */
+            transition: all 2s;
+        }
+
+        .box:hover{
+           width: 600px;
+           background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

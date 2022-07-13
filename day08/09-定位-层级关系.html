@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .one{
+            position: absolute;
+            left: 20px;
+            top: 50px;
+            background-color: pink;
+            z-index: 2;
+        }
+        .two{
+            z-index: 1;
+            position: absolute;
+            left: 50px;
+            top: 100px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        默认情况下：后来者居上
+        z-inde：整数，取值越大，显示顺序越靠上,默认值是0
+        注意：必须配合定位生效
+     -->
+    <!-- 如果两个定位的标签，层级顺序是后压前 -->
+    <div class="two">two</div>
+    <div class="one">one</div>
+    
+</body>
+</html>

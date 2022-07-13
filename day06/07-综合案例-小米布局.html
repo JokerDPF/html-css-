@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .top{
+            height: 40px;
+            background-color: #333333;
+        }
+
+        .header{
+            width: 1226px;
+            height: 100px;
+            background-color: #ffc0cb;
+            margin: 0 auto;
+        }
+        .centent{
+            width: 1226px;
+            height: 460px;
+            background-color: #fff;
+            /* 居中 */
+            margin: 0 auto;
+        }
+
+        .left{
+            width: 234px;
+            height: 460px;
+            background-color: #ffa500;
+            /* 浮动 */
+            float: left;
+        }
+
+        .right{
+            width: 992px;
+            height: 460px;
+            background-color: #87ceeb;
+            float: left;
+        }
+
+        /* css 书写顺序: 浏览器执行效率最高
+        1.放浮动或者display
+        2.盒子模型：margin border padding 宽度高度背景色
+        3.文字样式
+         */
+
+    </style>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="header"></div>
+    <div class="centent">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,231 @@
+/* 各个页面相同的样式表：头，尾部 */
+/* 版心 */
+.wrapper{
+    width: 1240px;
+    margin: 0 auto;
+}
+/* 快捷导航 */
+.shortcut {
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut .wrapper{
+    height: 52px;
+    /* background-color: pink; */
+}
+
+.shortcut .wrapper ul{
+    float: right;
+}
+.shortcut .wrapper ul li{
+    float: left;
+    line-height: 52px;
+}
+.shortcut .wrapper a{
+    padding:0 16px;
+    border-right: 1px solid #666666;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.shortcut .wrapper a span{
+    margin-right: 8px;
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    background-image: url(../images/sprites.png);
+    background-position: -160px -70px;
+    vertical-align: middle;
+}
+
+.header{
+    margin:30px auto;
+    height: 70px;
+    /* background-color: pink; */
+}
+
+.logo{
+    margin-right: 40px;
+    float: left;
+    width: 207px;
+    height: 70px;
+}
+
+/* logo的搜索引擎优化 */
+.logo h1{
+    
+    width: 207px;
+    height: 70px;
+}
+
+.logo h1 a{
+    
+    display: block;
+    
+    width: 207px;
+    height: 70px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    /* 让h1里面的字看不见 */
+    font-size: 0;
+}
+
+
+
+.nav{
+    /* 内容多少不确定，所以不给宽度 */
+    float: left;
+    height: 70px;
+}
+
+.nav li{
+    float: left;
+    margin-right: 48px;
+    line-height: 70px;
+}
+
+.nav li a{
+    padding-bottom: 7px;
+}
+
+.nav li a:hover{
+    color:#27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+
+.search{
+    position: relative;;
+    float: left;
+    margin-left: 34px;
+    margin-top: 24px;
+    width: 172px;
+    height: 30px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.search input{
+    padding-left: 30px;
+    width: 172px;
+    height: 28px;
+}
+
+.search input::placeholder{
+    font-style: 14px;
+    color: #ccc;
+}
+
+.search span{
+    position: absolute;
+    left: 2px;
+    top: 0;
+    /* display: inline-block; */
+    width: 18px;
+    height: 18px;
+    /* background-color: pink; */
+    background-image: url(../images/sprites.png);
+    background-position: -79px -69px;
+    vertical-align: middle;
+}
+
+.car{
+    position: relative;
+    margin-top: 28px;
+    float: left;
+    margin-left: 15px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/sprites.png);
+    background-position: -119px -69px;
+}
+
+.car span{
+    /* 因为这里是绝对定位，盒子具备行内块的特点，所以设置宽高可以生效 */
+    position: absolute;
+    right: -13px;
+    top: -6px;
+    width: 20px;
+    height: 15px;
+    background-color: #e26237;
+    border-radius: 8px;
+    text-align: center;
+    font-style: 13px;
+    color: #fff;
+    line-height: 15px;
+}
+/* 版权footer */
+.footer{
+    height: 342px;
+    background-color: #333333;
+}
+
+.footer .wrapper{
+    width: 1393px;
+}
+
+.footer .top{
+    padding-top: 59px;
+    padding-left: 135px;
+    height: 175px;
+    border-bottom: 3px dashed #434343;
+}
+
+.footer .top li{
+    position: relative;
+    float: left;
+    margin-right: 300px;
+    width: 195px;
+    height: 58px;
+    line-height: 58px;
+}
+
+
+
+.footer .top li:last-child{
+    margin-right: 0;
+}
+
+/* 如果是伪元素添加的标签是行内显示模式 */
+/* 如果行内块和文字无法通过行高、vertical-align: middle;实现对齐，那就使用浮动或者定位来实现 */
+.footer .top li::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* 图和字对齐 */
+    vertical-align: middle;
+    content: '';
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 0;
+}
+.footer .top li span{
+    margin-left: 77px;
+    font-size: 28px;
+    color: #fff;
+    
+}
+/* 第二个li里面的before添加背景图位置属性 */
+.footer .top li:nth-child(2)::before{
+    background-position: -64px 0;
+}
+
+.footer .top li:nth-child(3)::before{
+    background-position: -130px 0;
+}
+
+.footer .bottom{
+    padding-top: 40px;
+    font-style: 14px;
+    color: #999999;
+    text-align: center;
+    
+}
+
+.footer .bottom a{
+    font-style: 14px;
+    color: #999999;
+}
+.footer .bottom p{
+    margin-bottom: 20px;
+}

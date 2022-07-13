@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* 长宽300px，padding会撑大盒子，weight height要减去padding */
+            width: 250px;
+            height: 250px;
+            background-color: pink;
+            padding: 50px;
+
+            /* padding属性可以当做符合属性使用，用空格隔开，表示单独设置某个方向的内边距 */
+            /* padding 最多放4个属性值 */
+            /* padding 后面的四个值代表：上右下左 */
+            padding: 20px 30px 40px 50px;
+
+            /* padding 三个值 */
+            /* 三个值： 上 左右 下 */
+            padding:40px 10px 80px;
+
+            /* padding 两个值 */
+            /* 两值： 上下 左右 */
+            padding: 40px 80px;
+        }
+    </style>
+</head>
+<body>
+    <div>文字</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* 单词首字母 */
+            /* font-size: ; */
+            font-size: 10px;
+            /* font-weight: ;    fw*/
+            font-weight: normal;
+            /* w */
+            widows: 1px; ;
+            /* h */
+            height: 2px;
+            /* bc */
+            background-color: #fff;
+            /* lh */
+            line-height: 3px;
+            /* w300+h200+bgc */
+            width: 300px;
+            height: 200px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+     <div></div>
+     <h1></h1>
+
+     <!-- 生成div 带类名 -->
+     <div class="box"></div>
+     <p class="box"></p>
+
+     <div id="box"></div>
+     <p id="box"></p>
+    
+     <p class="red" id="one"></p>
+
+     <!-- div 同级 p   div+p-->
+     <div></div>
+     <p></p>
+     <!-- 父子级 div>p-->
+     <div>
+         <p></p>
+     </div>
+
+     <ul>
+         <li></li>
+     </ul>
+     <!-- ul里面有三个li ul>li*3-->
+     <ul>
+         <li></li>
+         <li></li>
+         <li></li>
+     </ul>
+
+     <!-- ul里面有3个li，里里面有文字 ul>li{111}*3-->
+     <ul>
+         <li>111</li>
+         <li>111</li>
+         <li>111</li>
+     </ul>
+
+     <!-- ul里面有3个里，li文字1,2,3 ul>li{$}*3-->
+     <ul>
+         <li>1</li>
+         <li>2</li>
+         <li>3</li>
+     </ul>
+
+</body>
+</html>

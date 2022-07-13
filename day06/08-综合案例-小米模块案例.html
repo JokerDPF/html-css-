@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            width: 1226px;
+            height: 614px;
+            /* background-color: pink; */
+            margin: 0 auto;
+        }
+
+        .left{
+            float: left;
+
+            width: 234px;
+            height: 614px;
+            background-color: #800080;
+            
+        }
+        .right{
+            float: right;
+
+            width: 978px;
+            height: 614px;
+            /* background-color: green; */
+            
+        }
+
+        ul{
+            /* 去掉列表符号 */
+            list-style: none;
+        }
+
+        .right li{
+            width: 234px;
+            height: 300px;
+            background-color: #87ceed;
+            float: left;
+            margin-right: 14px;
+            margin-bottom: 14px;
+        }
+        .right li:nth-child(4n){
+            margin-right: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left"></div>
+        <div class="right">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        
+    </div>
+</body>
+</html>

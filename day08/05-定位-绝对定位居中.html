@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            /* 标准流居中：margin: 0 auto; */
+            /* 1.绝对定位的盒子不能使用margin auto居中 */
+            position: absolute;
+            /* 如果是left取50%整个盒子会移动到中间偏右 */
+            left: 50%;
+            /* 把盒子向左移动盒子宽度的一半 */
+            /* margin-left: -150px; */
+
+            top: 50%;
+            /* margin-top: -150px; */
+            /* 位移：自己宽高的一半 自动修改让盒子居中*/
+            transform: translate(-50%,-50%);
+
+            height: 303px;
+            width: 300px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

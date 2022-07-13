@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 偶数 2n 奇数2n+1  前3个 -n+3 */
+        li:nth-child(4n){
+            background-color: green;
+        }
+        /* 第一个li里面的a */
+        li:nth-child(1) a{
+            background-color: pink;
+        }
+        /* 倒数第一个li里面a3 */
+        li:last-child a:nth-child(3){
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li> <a href="">这是第1个li里面的a</a> </li>
+        <li> <a href="">这是第2个li里面的a</a> </li>
+        <li> <a href="">这是第3个li里面的a</a> </li>
+        <li> <a href="">这是第4个li里面的a</a> </li>
+        <li> <a href="">这是第5个li里面的a</a> </li>
+        <li> <a href="">这是第6个li里面的a</a> </li>
+        <li> <a href="">这是第7个li里面的a</a> </li>
+        <li> <a href="">这是第8个li里面的a</a> </li>
+
+        <li>
+            <a href="">这是第1个li里面的a1</a>
+            <a href="">这是第1个li里面的a2</a>
+            <a href="">这是第1个li里面的a3</a>
+            <a href="">这是第1个li里面的a4</a>
+            <a href="">这是第1个li里面的a5</a>
+            <a href="">这是第1个li里面的a6</a>
+            <a href="">这是第1个li里面的a7</a>
+            <a href="">这是第1个li里面的a8</a>
+        </li>
+    </ul>
+</body>
+</html>

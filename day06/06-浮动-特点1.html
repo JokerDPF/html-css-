@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 浮动不会占用标准流的位置 */
+        /* 浮动标签 顶对齐 */
+        /* 一行显示多个 可以设置宽高 --- 浮动后的标签具备行内块的特点 */
+        .one{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+
+            float: left;
+            
+            margin-top: 50px;
+        }
+        .two{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+
+            float: left;
+
+            /* 因为有浮动不能生效 */
+            margin: 0 auto;
+        }
+        .three{
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div>
+</body>
+</html>
